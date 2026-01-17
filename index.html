@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brice défie les sommets : 30 fois 3000 mètres pour ses 30 ans | Le Nouvelliste</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background-color: #f5f5f0;
+            color: #2c2c2c;
+            line-height: 1.7;
+        }
+
+        .header {
+            background-color: #c41e3a;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 4px solid #8b1528;
+        }
+
+        .header h1 {
+            font-family: 'Arial Black', sans-serif;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .date-section {
+            background-color: #2c2c2c;
+            color: #f5f5f0;
+            text-align: center;
+            padding: 10px;
+            font-size: 0.9em;
+            letter-spacing: 1px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 50px 60px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .category {
+            color: #c41e3a;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.85em;
+            letter-spacing: 1.5px;
+            margin-bottom: 10px;
+            opacity: 0;
+            animation: fadeIn 0.6s ease-in forwards;
+        }
+
+        .article-title {
+            font-size: 2.8em;
+            font-weight: bold;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+            opacity: 0;
+            animation: fadeIn 0.8s ease-in 0.2s forwards;
+        }
+
+        .subtitle {
+            font-size: 1.3em;
+            color: #555;
+            font-style: italic;
+            margin-bottom: 30px;
+            line-height: 1.5;
+            opacity: 0;
+            animation: fadeIn 0.8s ease-in 0.4s forwards;
+        }
+
+        .author-date {
+            font-size: 0.9em;
+            color: #777;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e0e0e0;
+            opacity: 0;
+            animation: fadeIn 0.8s ease-in 0.6s forwards;
+        }
+
+        .author-date strong {
+            color: #2c2c2c;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5em;
+            border-radius: 4px;
+            opacity: 0;
+            animation: fadeIn 1s ease-in 0.8s forwards;
+        }
+
+        .article-content {
+            opacity: 0;
+            animation: fadeIn 1s ease-in 1s forwards;
+        }
+
+        .article-content p {
+            margin-bottom: 20px;
+            text-align: justify;
+            font-size: 1.1em;
+        }
+
+        .article-content p:first-letter {
+            font-size: 3.5em;
+            font-weight: bold;
+            float: left;
+            line-height: 0.9;
+            margin-right: 8px;
+            margin-top: 5px;
+            color: #c41e3a;
+        }
+
+        .quote {
+            background-color: #f9f9f9;
+            border-left: 4px solid #c41e3a;
+            padding: 20px 30px;
+            margin: 30px 0;
+            font-style: italic;
+            color: #444;
+            font-size: 1.15em;
+        }
+
+        .quote cite {
+            display: block;
+            margin-top: 10px;
+            font-style: normal;
+            font-weight: bold;
+            color: #c41e3a;
+            font-size: 0.95em;
+        }
+
+        .stats-box {
+            background-color: #fef9e7;
+            border: 2px solid #f39c12;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 4px;
+        }
+
+        .stats-box h3 {
+            color: #f39c12;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .stats-box ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .stats-box li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f9e79f;
+            font-size: 1.05em;
+        }
+
+        .stats-box li:last-child {
+            border-bottom: none;
+        }
+
+        .stats-box li strong {
+            color: #d68910;
+        }
+
+        .emoji {
+            font-size: 1.2em;
+            margin-right: 5px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: #888;
+            font-size: 0.9em;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 25px;
+                margin: 20px;
+            }
+
+            .article-title {
+                font-size: 2em;
+            }
+
+            .subtitle {
+                font-size: 1.1em;
+            }
+
+            .hero-image {
+                height: 250px;
+                font-size: 3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Le Nouvelliste</h1>
+    </div>
+    
+    <div class="date-section">
+        Dimanche 19 janvier 2026 | Édition du Valais
+    </div>
+
+    <div class="container">
+        <div class="category">Région • Portrait</div>
+        
+        <h1 class="article-title">Brice défie les sommets : 30 fois 3000 mètres pour ses 30 ans</h1>
+        
+        <p class="subtitle">Entre passion montagnarde et folie douce, un jeune homme du Valais s'est lancé un défi aussi ambitieux qu'épuisant. Ses proches oscillent entre admiration et inquiétude.</p>
+        
+        <div class="author-date">
+            <strong>Par Jean-Claude Tornare</strong> | Photos : Archives personnelles
+        </div>
+
+        <div class="hero-image" style="background: none; height: auto;">
+            <img src="https://github.com/Tonygains/Brice-sans-limite/blob/main/images/WhatsApp%20Image%202026-01-17%20at%2010.36.52.jpeg?raw=true" alt="Brice en montagne" style="width: 100%; height: auto; border-radius: 4px;">
+        </div>
+
+        <div class="article-content">
+            <p>Certains fêtent leurs 30 ans avec un gâteau, une soirée entre amis ou un voyage aux Maldives. Pas Brice. Lui a décidé de gravir 30 sommets de 3000 mètres, histoire de marquer le coup. Une idée qui peut sembler charmante sur le papier, jusqu'à ce que ses proches réalisent ce que cela implique réellement : des weekends entiers sacrifiés sur l'autel de l'alpinisme, des départs aux aurores et des retours à la frontale, le tout avec un enthousiasme à toute épreuve qui confine parfois à l'acharnement thérapeutique.</p>
+
+            <p>Le projet se déroule en plusieurs fois, mais de manière intensive. Chaque weekend devient une nouvelle aventure verticale. Et quand on dit weekend, on ne parle pas d'une petite balade digestive au Grammont. Non, Brice vise plutôt les sommets oubliés, ceux dont le dernier itinéraire décrit sur le site du Club Alpin Suisse date de 2014. Vous savez, ces montagnes où même les chamois se demandent ce que vous venez faire là.</p>
+
+            <div class="stats-box">
+                <h3><span class="emoji">📊</span>Le défi en chiffres</h3>
+                <ul>
+                    <li><strong>Objectif :</strong> 30 sommets de 3000 mètres</li>
+                    <li><strong>Réalisé à ce jour :</strong> 9 sommets (30% accomplis)</li>
+                    <li><strong>Rythme :</strong> Tous les weekends</li>
+                    <li><strong>Compagnons de cordée :</strong> Variables, souvent terrorisés</li>
+                    <li><strong>Source d'inspiration :</strong> Kilian Jornet</li>
+                    <li><strong>Altitude moyenne des archives du CAS :</strong> 2014 mètres d'ancienneté</li>
+                </ul>
+            </div>
+
+            <div class="secondary-image" style="margin: 40px 0; text-align: center;">
+                <img src="https://github.com/Tonygains/Brice-sans-limite/blob/main/images/WhatsApp%20Image%202026-01-17%20at%2010.37.35.jpeg?raw=true" alt="Brice au sommet" style="width: 100%; max-width: 800px; height: auto; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <p style="font-size: 0.9em; color: #777; margin-top: 10px; font-style: italic;">Brice à l'assaut d'un nouveau sommet, loin de la foule</p>
+            </div>
+
+            <p>Car Brice déteste la foule. Inutile de lui proposer le Cervin ou le Mont Rose, trop mainstream à son goût. Il préfère les petites pointures alpines, ces sommets dont personne ne se souvient du nom et qui figurent sur les cartes avec une annotation prudente du style "accès délicat, prudence conseillée". Le genre d'endroit où l'on croise plus facilement un bouquetin philosophe qu'un groupe de randonneurs du dimanche.</p>
+
+            <p>Inspiré par les exploits de Kilian Jornet, le phénomène catalan qui court plus vite en montagne que la plupart des gens en descendent, Brice s'est convaincu que lui aussi pouvait repousser ses limites. Sauf que Kilian, c'est Kilian. Et Brice, c'est Brice. Mais qu'importe, l'essentiel est d'y croire. Et sur ce point, force est de constater que le jeune homme ne manque ni de conviction ni de persévérance.</p>
+
+            <div class="quote">
+                "Au début, je pensais qu'il faisait juste une petite balade avec ses copains. Genre pique-nique avec vue. Mais quand il m'a montré les photos sur son téléphone, j'ai vu des arêtes glacées, des pentes à 45 degrés et des cordes partout. J'ai dit : 'Mais mon chéri, tu veux me tuer d'inquiétude ou quoi ?' Il m'a répondu : 'Maman, t'inquiète, c'est du facile.' Facile ! Mon Dieu..."
+                <cite>— Claudia, la maman de Brice</cite>
+            </div>
+
+            <p>Neuf sommets ont déjà été conquis, soit un tiers du projet. Brice progresse bien, même si ses amis, eux, progressent surtout dans l'art de trouver des excuses pour ne pas l'accompagner. Car participer à une sortie avec Brice, c'est un peu comme signer un pacte faustien : on sait qu'on va souffrir, mais on y va quand même, par amitié ou par masochisme, difficile de trancher.</p>
+
+            <p>Louis, l'un de ses compagnons de cordée les plus fidèles, en sait quelque chose. Volontaire mais souvent inquiet, il doit régulièrement se faire violence pour suivre son ami sur des sommets parfois périlleux. Entre deux ascensions, Louis confie qu'il a développé une relation ambiguë avec les weekends : d'un côté, l'excitation de l'aventure; de l'autre, la conscience aiguë que ses mollets ne lui pardonneront jamais.</p>
+
+            <div class="quote">
+                "Brice m'appelle le jeudi soir. Il me dit : 'Louis, dimanche, on fait un petit sommet sympa, tranquille.' Moi, naïf, j'accepte. Le dimanche à 5h du matin, je me retrouve avec des crampons aux pieds sur une pente de neige dure, à me demander ce que je fais de ma vie. Mais bon, c'est mon pote. Et puis, la vue est quand même pas mal. Quand on arrive à reprendre son souffle pour la regarder."
+                <cite>— Louis, ami et victime consentante</cite>
+            </div>
+
+            <p>Quand ses amis ne sont pas disponibles, Brice n'hésite pas à partir seul. Une pratique qui fait frissonner les puristes de la montagne, mais qui témoigne surtout d'une détermination sans faille. Rien ne l'arrête, ni la météo capricieuse, ni l'absence de compagnons, ni même le manque criant de neige cette saison. Là où d'autres renonceraient, Brice s'adapte, improvise, avance. On le soupçonne d'avoir dans son sac à dos une réserve secrète de motivation que le commun des mortels ne possède pas.</p>
+
+            <p>Malgré des conditions hivernales difficiles et un enneigement déficitaire qui transforme certaines ascensions en parcours du combattant rocheux, le projet continue. Brice brave le verglas, les pierres instables et les prévisions météo anxiogènes. Son secret ? Une préparation minutieuse, une lecture obsessionnelle des bulletins d'avalanche et une foi inébranlable dans ses chaussures de montagne.</p>
+
+            <p>Mais le défi de Brice a aussi des conséquences collatérales. Margot, sa copine, a rapidement compris qu'elle devait faire une croix sur les activités traditionnelles du weekend. Exit les brunch tranquilles, les sorties culturelles ou les grasses matinées. Désormais, les weekends se déclinent en deux options : soit accompagner Brice dans ses périples montagnards (ce qui nécessite une condition physique de semi-déesse), soit l'attendre au chaud en croisant les doigts pour qu'il revienne entier.</p>
+
+            <div class="quote">
+                "Au début, je trouvais ça romantique. Mon copain, aventurier des cimes, tout ça. Maintenant, je passe mes samedis à regarder son point GPS sur mon téléphone en priant pour qu'il bouge encore. Et quand il rentre, il est tellement crevé qu'il s'endort dans le canapé avant même d'avoir fini de raconter son sommet. Mais bon, je l'aime, ce fou. Et puis, au moins, il ne passe pas ses weekends devant la télé."
+                <cite>— Margot, la copine philosophe</cite>
+            </div>
+
+            <p>Alors que le projet approche de son premier tiers, Brice garde le moral et les jambes solides. Encore 21 sommets à gravir, encore autant de weekends à planifier, encore des dizaines d'heures à crapahuter sur des arêtes exposées pendant que le reste du monde fait la grasse matinée. Mais pour ce trentenaire aux ambitions verticales, il n'y a pas de meilleure façon de célébrer cette décennie que de la passer littéralement au-dessus de tout le monde.</p>
+
+            <p>Une chose est sûre : quand Brice aura terminé son défi, il aura des histoires à raconter pour les 30 prochaines années. Et ses amis, eux, auront des muscles qu'ils ne soupçonnaient même pas posséder. En attendant, chaque weekend, quelque part dans les Alpes, sur un sommet oublié dont personne ne connaît le nom, un jeune homme continue son ascension personnelle, un pas après l'autre, une montagne après l'autre, un anniversaire à la fois.</p>
+
+            <p>Et si vous croisez un jour un type avec un regard déterminé et un sac à dos surdimensionné qui consulte frénétiquement une carte topographique datant de l'âge de pierre numérique, ne vous inquiétez pas. C'est juste Brice. Saluez-le, encouragez-le, mais surtout, ne lui proposez pas de l'accompagner. À moins que vous n'ayez absolument rien prévu d'autre pour les dix prochains weekends de votre vie.</p>
+        </div>
+
+        <div class="footer">
+            Cet article a été rédigé avec humour et tendresse. Tous nos encouragements à Brice pour la suite de son aventure !
+        </div>
+    </div>
+
+    <script>
+        // Animation supplémentaire au scroll (optionnel)
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Article chargé avec succès ! Bonne lecture 🏔️');
+        });
+    </script>
+</body>
+</html>
